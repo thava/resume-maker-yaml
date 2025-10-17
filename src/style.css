@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@600;700&display=swap');
+@import "tailwindcss";
+
+body {
+  background-color: white;
+  color: rgb(31 41 55); /* gray-800 for better visibility */
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+
+:is(.dark body) {
+  background-color: rgb(17 24 39);
+  color: rgb(243 244 246);
+}
+
+/* Ensure text is visible in light mode */
+p, span, li {
+  color: rgb(31 41 55); /* gray-800 */
+}
+
+:is(.dark p), :is(.dark span), :is(.dark li) {
+  color: rgb(229 231 235); /* gray-200 */
+}
+
+/* Theme notification should always have white text */
+#themeNotification {
+  color: white !important;
+}
+
+#themeNotification span {
+  color: white !important;
+}
+
+/* Contact links should match contact text color */
+header a {
+  color: rgb(75 85 99) !important; /* gray-600 in light mode */
+}
+
+:is(.dark header a) {
+  color: rgb(156 163 175) !important; /* gray-400 in dark mode - same as contact text */
+}
+
+/* Override the general span rule for contact section in dark mode */
+:is(.dark header span) {
+  color: rgb(156 163 175) !important; /* gray-400 */
+}
+
+/* Technology badges should have visible text in both modes */
+.flex.flex-wrap.gap-2 span {
+  color: rgb(55 65 81) !important; /* gray-700 in light mode */
+  background-color: rgb(243 244 246) !important; /* gray-100 in light mode */
+  border-color: rgb(209 213 219) !important; /* gray-300 in light mode */
+}
+
+:is(.dark .flex.flex-wrap.gap-2 span) {
+  color: rgb(209 213 219) !important; /* gray-300 in dark mode */
+  background-color: rgb(31 41 55) !important; /* gray-800 in dark mode */
+  border-color: rgb(75 85 99) !important; /* gray-600 in dark mode */
+}
+
+.page-break {
+  break-after: page;
+}
+
+.no-page-break {
+  break-inside: avoid;
+}
+
+/* Print-specific styles */
+@media print {
+  body {
+    background-color: white;
+    color: rgb(17 24 39);
+  }
+
+  .dark-mode-toggle {
+    display: none;
+  }
+
+  /* Page setup */
+  @page {
+    margin: 0.5in;
+    size: letter;
+  }
+
+  /* Force page breaks where specified */
+  .page-break {
+    page-break-after: always;
+    break-after: page;
+  }
+
+  /* Prevent page breaks within elements */
+  .no-page-break {
+    page-break-inside: avoid;
+    break-inside: avoid;
+  }
+
+  /* Ensure colors print correctly */
+  * {
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+
+  /* Optimize link appearance for print */
+  a {
+    text-decoration: none;
+  }
+
+  /* Ensure proper spacing */
+  section {
+    orphans: 3;
+    widows: 3;
+  }
+
+  /* Header stays together */
+  header {
+    page-break-after: avoid;
+    break-after: avoid;
+  }
+
+  /* Section headings stay with content */
+  h3 {
+    page-break-after: avoid;
+    break-after: avoid;
+  }
+}

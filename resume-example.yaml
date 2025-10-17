@@ -1,0 +1,102 @@
+name: Alex Morgan
+title: Principal Software Security Engineer
+contact:
+  address: San Francisco, CA, USA
+  email: alex.morgan.secure@gmail.com
+  phone: +1-415-555-7642
+  linkedIn: "linkedin.com/in/alex-morgan-security"
+
+objective: |
+  Accomplished Software Security Engineer with over 15 years of hands-on experience building, auditing, and securing distributed software systems. Adept at identifying vulnerabilities, implementing secure software architectures, and leading enterprise-wide security initiatives. Passionate about threat modeling, zero-trust design, and integrating security as a core principle in modern software development.
+
+certifications:
+  - "CISSP - Certified Information Systems Security Professional"
+  - "GIAC Secure Software Programmer (GSSP-JAVA)"
+  - "Certified Cloud Security Professional (CCSP)"
+  - "AWS Certified Security - Specialty"
+
+achievements:
+  - Winner, DEFCON Capture The Flag (CTF) Enterprise Challenge 2023
+  - Recognized as "Top 25 Security Innovators" by Infosec Weekly (2022)
+  - Speaker at Black Hat USA 2021 - "Threat Modeling for Cloud-Native Systems"
+
+skills:
+  - Secure Software Architecture
+  - Cloud Security (AWS, GCP, Azure)
+  - Application Penetration Testing
+  - Threat Modeling and Risk Assessment
+  - Static and Dynamic Code Analysis
+  - Microservices and Zero-Trust Architecture
+  - Security Automation (DevSecOps)
+  - Programming: Python, Go, Java, Rust
+
+experience:
+  - title: Principal Security Engineer
+    company: RedShield Technologies, San Francisco, CA, USA
+    duration: Mar 2022 - Present
+    responsibilities:
+      - Lead architect for secure software frameworks and vulnerability management automation across distributed microservices environments.
+      - Designed company-wide "Secure by Design" initiative introducing code scanning, SBOM verification, and runtime intrusion detection.
+      - Led red/blue team coordination for quarterly simulated attack and incident response readiness.
+      - Designed Zero Trust network model leveraging mTLS, OPA, and short-lived credentials using AWS IAM roles and HashiCorp Vault.
+      - Secure Microservice Mesh:
+        - Built service mesh layer enforcing fine-grained authorization policies using OPA and SPIFFE/SPIRE identity framework.
+        - Improved compliance readiness (SOC 2 Type II) and minimized cross-service lateral movement risk.
+    skills: [ "Zero Trust Architecture", "AWS Security", "Vault", "DevSecOps", "Python", "OPA", "IAM", "Threat Modeling" ]
+
+  - title: Lead Application Security Engineer
+    company: CyberFort Labs, Palo Alto, CA, USA
+    duration: Jun 2017 - Feb 2022
+    responsibilities:
+      - Directed secure software lifecycle initiatives across multiple SaaS products.
+      - Integrated automated static and dynamic analysis tools into CI/CD pipelines using GitHub Actions and AWS CodeBuild.
+      - Designed threat models for fintech and healthcare applications to comply with PCI DSS and HIPAA.
+      - Coordinated penetration testing and vulnerability management with external vendors.
+      - SecureBuild Automation Framework:
+        - Implemented a DevSecOps pipeline incorporating SAST/DAST, dependency vulnerability scanning, and compliance gates.
+        - Reduced release-time vulnerabilities by 70 percent and improved deployment reliability.
+      - Compliance Reporting API:
+        - Designed microservice-based API for centralized vulnerability tracking and audit reporting.
+        - Automated evidence collection for SOC 2 and ISO 27001 certifications.
+    skills: [ "Application Security", "Static Analysis", "CI/CD Security", "Threat Modeling", "Python", "Go", "Cloud Security" ]
+
+  - title: Senior Security Engineer
+    company: IronCore Systems, Mountain View, CA, USA
+    duration: Mar 2013 - May 2017
+    responsibilities:
+      - Developed cryptographic libraries and authentication modules for enterprise SaaS products.
+      - Built tools for runtime memory inspection and code injection detection in containerized environments.
+      - Collaborated with product teams to ensure secure coding standards were applied consistently across microservice deployments.
+      - Encryption SDK:
+        - Led the design of an open-source encryption SDK providing AES-GCM and RSA key management features.
+        - Adopted by over 40 clients for secure data-at-rest implementations.
+      - Runtime Security Agent:
+        - Developed in-container runtime agent that detected unauthorized shell access and privilege escalation attempts.
+        - Reduced incident response time by 50 percent through automated alerting integration.
+    skills: [ "Cryptography", "Authentication", "Container Security", "Microservices", "Go", "Java", "Docker", "Kubernetes" ]
+
+  - title: Software Security Analyst
+    company: SentinelSoft Security Solutions, San Francisco, CA, USA
+    duration: Jan 2009 - Feb 2013
+    responsibilities:
+      - Conducted penetration testing and reverse engineering of web and mobile applications.
+      - Performed static code analysis using Fortify and SonarQube to identify OWASP Top 10 vulnerabilities.
+      - Collaborated with clients to define and enforce secure software requirements and compliance controls.
+      - Provided security training for engineering teams across multiple industries.
+      - Enterprise Secure Code Program:
+        - Designed and rolled out a company-wide Secure Coding Program that improved developer awareness.
+        - Reduced post-release vulnerabilities by 60 percent year over year.
+      - Vulnerability Intelligence Dashboard:
+        - Built a centralized dashboard correlating vulnerability scan results and remediation progress.
+        - Streamlined reporting and tracking across multiple client engagements.
+    skills: [ "Penetration Testing", "Reverse Engineering", "Static Analysis", "Secure SDLC", "OWASP", "Python", "Java" ]
+
+education:
+  - degree: Master of Science in Computer Security
+    institution: University of California, Berkeley, USA
+    duration: Aug 2006 - May 2008
+    pageBreakAfter: false
+
+  - degree: Bachelor of Science in Computer Science
+    institution: Stanford University, Palo Alto, USA
+    duration: Sep 2002 - Jun 2006

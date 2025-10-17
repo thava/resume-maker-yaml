@@ -1,0 +1,35 @@
+{
+  "name": "Custom Theme",
+  "fonts": {
+    "heading": "Playfair Display",
+    "body": "Inter"
+  },
+  "colors": {
+    "my_teal": "#23CED9",
+    "my_brown": "#FCA47C",
+    "my_pink": "#FF9AB3",
+    "my_green": "#2FD9D4",
+    "blue": "#4493f8",
+    "purple": "#7c3aed",
+    "orange": "#f59e0b",
+    "green": "#047857",
+    "teal": "#0891b2",
+    "primary": "#23CED9",
+    "secondary": "#047857",
+    "tertiary": "#FCA47C",
+    "accent": "#FF9AB3",
+    "text": {
+      "light": "#1f2937",
+      "dark": "#f3f4f6"
+    },
+    "background": {
+      "light": "#ffffff",
+      "dark": "#111827"
+    },
+    "muted": "#6b7280"
+  },
+  "spacing": {
+    "sectionGap": "2rem",
+    "itemGap": "1rem"
+  }
+}

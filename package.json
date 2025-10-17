@@ -1,0 +1,30 @@
+{
+  "name": "resume-maker-yaml",
+  "version": "1.0.0",
+  "description": "Resume Generator from YAML to HTML",
+  "type": "module",
+  "scripts": {
+    "prebuild": "node prebuild.js",
+    "build": "pnpm prebuild && vite build",
+    "preview": "vite preview",
+    "deploy": "pnpm build && node deploy.js"
+  },
+  "keywords": [
+    "resume",
+    "tailwind",
+    "vite"
+  ],
+  "author": "Thava Alagu <thavamuni@gmail.com>",
+  "license": "MIT",
+  "packageManager": "pnpm@10.18.0",
+  "devDependencies": {
+    "@tailwindcss/postcss": "^4.1.14",
+    "@tailwindcss/typography": "^0.5.19",
+    "autoprefixer": "^10.4.21",
+    "handlebars": "^4.7.8",
+    "js-yaml": "^4.1.0",
+    "postcss": "^8.5.6",
+    "tailwindcss": "^4.1.14",
+    "vite": "^7.1.10"
+  }
+}
