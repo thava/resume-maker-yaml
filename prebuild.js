@@ -11,12 +11,23 @@ const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
 // Configuration
-const RESUME_FILE = process.env.RESUME || 'resume'; // without extension
+const RESUME_FILE = process.env.RESUME_FILE || ''
 
 // Helper function to read resume data (YAML or JSON)
 function readResumeData() {
-  const yamlPath = path.join(__dirname, `${RESUME_FILE}.yaml`);
-  const jsonPath = path.join(__dirname, `${RESUME_FILE}.json`);
+
+  let yamlPath = path.join(__dirname, `resume.yaml`);
+  let jsonPath = path.join(__dirname, `resume.json`);
+
+  if (RESUME_FILE.toLowerCase().endsWith('.yaml')){
+    yamlPath = RESUME_FILE
+    jsonPath = ''           // when yaml file given do not try json.
+  }
+
+  if (RESUME_FILE.toLowerCase().endsWith('.json')){
+    jsonPath = RESUME_FILE
+    yamlPath = ''           // when json file given do not try yaml.
+  }
 
   try {
     // Try YAML first
@@ -32,7 +43,7 @@ function readResumeData() {
       return JSON.parse(jsonContent);
     }
 
-    throw new Error(`Resume file not found: ${RESUME_FILE}.yaml or ${RESUME_FILE}.json`);
+    throw new Error(`Resume file not found: ${yamlPath} or ${jsonPath}`);
   } catch (error) {
     console.error('❌ Error reading resume data:', error.message);
     process.exit(1);

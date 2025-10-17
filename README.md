@@ -33,8 +33,20 @@ pnpm install
 ### Development
 
 ```bash
+
+#
+# Input RESUME_FILE (.yaml or .json) is needed.
+#
+# Default input file:  resume.yaml or else resume.json
+# Do one of the following:
+
+    cp resume-example.yaml resume.yaml     # Edit resume.yaml
+    export RESUME_FILE=your_name.yaml      # Default env: resume.yaml
+
 # Generate your resume as a single HTML file
 pnpm prebuild
+open ./dist/index.html
+
 ```
 
 This will:
